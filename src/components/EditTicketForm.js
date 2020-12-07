@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { useFirestore } from 'react-redux-firebase';
 
 function EditTicketForm (props) {
+  console.log("props E ", props);
   const firestore = useFirestore;
   const { ticket } = props;
 
@@ -21,6 +22,7 @@ function EditTicketForm (props) {
   return (
     <React.Fragment>
       <ReusableForm 
+        ticket={props.ticket}
         formSubmissionHandler={handleEditTicketFormSubmission}
         buttonText="Update Ticket" />
     </React.Fragment>
