@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 function Header(){
   return (
     <React.Fragment>
-      <h1> Help Queue</h1>
+      <div className="header">
+        <h1> Help Queue</h1>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -13,6 +14,8 @@ function Header(){
           <Link to="/signin">Sign In</Link>
         </li>
       </ul>
+      </div>
+      
     </React.Fragment>
   );
 }

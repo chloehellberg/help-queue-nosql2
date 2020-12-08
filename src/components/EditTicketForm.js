@@ -5,7 +5,7 @@ import { useFirestore } from 'react-redux-firebase';
 
 function EditTicketForm (props) {
   console.log("props E ", props);
-  const firestore = useFirestore;
+  const firestore = useFirestore();
   const { ticket } = props;
 
   function handleEditTicketFormSubmission(event) {
