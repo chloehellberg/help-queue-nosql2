@@ -9,18 +9,18 @@ function ReusableForm(props) {
         <input
           type='text'
           name='names'
-          defaultValue={props.ticket.names ? props.ticket.names : ""}
+          defaultValue={props.ticket ? props.ticket.names : "" }
           placeholder='Pair Names' />
         <br />
         <input
           type='text'
           name='location'
-          defaultValue={props.ticket.location ? props.ticket.location : ""}
+          defaultValue={props.ticket ? props.ticket.location : ""}
           placeholder='Location' />
         <br />
         <textarea
           name='issue'
-          defaultValue={props.ticket.issue ? props.ticket.issue : ""}
+          defaultValue={props.ticket ? props.ticket.issue : ""}
           placeholder='Describe your issue.' />
         <br />
         <button type='submit'>{props.buttonText}</button>
